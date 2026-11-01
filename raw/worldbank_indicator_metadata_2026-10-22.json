@@ -1,0 +1,864 @@
+{
+  "NY.GDP.MKTP.CD": [
+    {
+      "page": 1,
+      "pages": 1,
+      "per_page": "50",
+      "total": 1
+    },
+    [
+      {
+        "id": "NY.GDP.MKTP.CD",
+        "name": "GDP (current US$)",
+        "unit": "",
+        "source": {
+          "id": "2",
+          "value": "World Development Indicators"
+        },
+        "sourceNote": "Gross domestic product is the total income earned through the production of goods and services in an economic territory during an accounting period. It can be measured in three different ways: using either the expenditure approach, the income approach, or the production approach. This indicator is expressed in current prices, meaning no adjustment has been made to account for price changes over time. This indicator is expressed in United States dollars.",
+        "sourceOrganization": "Country official statistics, National Statistical Organizations and/or Central Banks;\nNational Accounts data files, Organisation for Economic Co-operation and Development (OECD);\nStaff estimates, World Bank (WB)",
+        "topics": [
+          {
+            "id": "3",
+            "value": "Economy & Growth"
+          }
+        ]
+      }
+    ]
+  ],
+  "NY.GDP.PCAP.CD": [
+    {
+      "page": 1,
+      "pages": 1,
+      "per_page": "50",
+      "total": 1
+    },
+    [
+      {
+        "id": "NY.GDP.PCAP.CD",
+        "name": "GDP per capita (current US$)",
+        "unit": "",
+        "source": {
+          "id": "2",
+          "value": "World Development Indicators"
+        },
+        "sourceNote": "Gross domestic product is the total income earned through the production of goods and services in an economic territory during an accounting period. It can be measured in three different ways: using either the expenditure approach, the income approach, or the production approach. The core indicator has been divided by the general population to achieve a per capita estimate.This indicator is expressed in current prices, meaning no adjustment has been made to account for price changes over time. This indicator is expressed in United States dollars.",
+        "sourceOrganization": "Country official statistics, National Statistical Organizations and/or Central Banks;\nNational Accounts data files, Organisation for Economic Co-operation and Development (OECD);\nStaff estimates, World Bank (WB)",
+        "topics": [
+          {
+            "id": "3",
+            "value": "Economy & Growth"
+          }
+        ]
+      }
+    ]
+  ],
+  "NY.GDP.MKTP.KD": [
+    {
+      "page": 1,
+      "pages": 1,
+      "per_page": "50",
+      "total": 1
+    },
+    [
+      {
+        "id": "NY.GDP.MKTP.KD",
+        "name": "GDP (constant 2015 US$)",
+        "unit": "",
+        "source": {
+          "id": "2",
+          "value": "World Development Indicators"
+        },
+        "sourceNote": "Gross domestic product is the total income earned through the production of goods and services in an economic territory during an accounting period. It can be measured in three different ways: using either the expenditure approach, the income approach, or the production approach. This indicator is expressed in constant prices, meaning the series has been adjusted to account for price changes over time. The reference year for this adjustment is 2015. This indicator is expressed in United States dollars.",
+        "sourceOrganization": "Country official statistics, National Statistical Organizations and/or Central Banks;\nNational Accounts data files, Organisation for Economic Co-operation and Development (OECD);\nStaff estimates, World Bank (WB)",
+        "topics": [
+          {
+            "id": "3",
+            "value": "Economy & Growth"
+          }
+        ]
+      }
+    ]
+  ],
+  "NY.GDP.PCAP.KD": [
+    {
+      "page": 1,
+      "pages": 1,
+      "per_page": "50",
+      "total": 1
+    },
+    [
+      {
+        "id": "NY.GDP.PCAP.KD",
+        "name": "GDP per capita (constant 2015 US$)",
+        "unit": "",
+        "source": {
+          "id": "2",
+          "value": "World Development Indicators"
+        },
+        "sourceNote": "Gross domestic product is the total income earned through the production of goods and services in an economic territory during an accounting period. It can be measured in three different ways: using either the expenditure approach, the income approach, or the production approach. The core indicator has been divided by the general population to achieve a per capita estimate.This indicator is expressed in constant prices, meaning the series has been adjusted to account for price changes over time. The reference year for this adjustment is 2015. This indicator is expressed in United States dollars.",
+        "sourceOrganization": "Country official statistics, National Statistical Organizations and/or Central Banks;\nNational Accounts data files, Organisation for Economic Co-operation and Development (OECD);\nStaff estimates, World Bank (WB)",
+        "topics": [
+          {
+            "id": "3",
+            "value": "Economy & Growth"
+          }
+        ]
+      }
+    ]
+  ],
+  "NY.GNP.PCAP.KD": [
+    {
+      "page": 1,
+      "pages": 1,
+      "per_page": "50",
+      "total": 1
+    },
+    [
+      {
+        "id": "NY.GNP.PCAP.KD",
+        "name": "GNI per capita (constant 2015 US$)",
+        "unit": "",
+        "source": {
+          "id": "2",
+          "value": "World Development Indicators"
+        },
+        "sourceNote": "Gross national income is the total income earned by all residents within an economic territory during an accounting period. It is equal to gross domestic product plus earned income receivable from abroad minus earned income payable abroad. The core indicator has been divided by the general population to achieve a per capita estimate.This indicator is expressed in constant prices, meaning the series has been adjusted to account for price changes over time. The reference year for this adjustment is 2015. This indicator is expressed in United States dollars.",
+        "sourceOrganization": "Country official statistics, National Statistical Organizations and/or Central Banks;\nNational Accounts data files, Organisation for Economic Co-operation and Development (OECD);\nStaff estimates, World Bank (WB)",
+        "topics": [
+          {
+            "id": "3",
+            "value": "Economy & Growth"
+          }
+        ]
+      }
+    ]
+  ],
+  "NY.GDP.MKTP.PP.KD": [
+    {
+      "page": 1,
+      "pages": 1,
+      "per_page": "50",
+      "total": 1
+    },
+    [
+      {
+        "id": "NY.GDP.MKTP.PP.KD",
+        "name": "GDP, PPP (constant 2021 international $)",
+        "unit": "",
+        "source": {
+          "id": "2",
+          "value": "World Development Indicators"
+        },
+        "sourceNote": "This indicator provides values for gross domestic product (GDP) expressed in constant international dollars, converted by purchasing power parities (PPPs). PPPs account for the different price levels across countries and thus PPP-based comparisons of economic output are more appropriate for comparing the output of economies and the average material well-being of their inhabitants than exchange-rate based comparisons. \n\nGross domestic product is the total income earned through the production of goods and services in an economic territory during an accounting period. It can be measured in three different ways: using either the expenditure approach, the income approach, or the production approach. This indicator is expressed in constant prices, meaning the series has been adjusted to account for price changes over time. The reference year for this adjustment is 2021. The PPP conversion factor is a currency conversion factor and a spatial price deflator. PPPs convert different currencies to a common currency and, in the process of conversion, equalize their purchasing power by eliminating the differences in price levels between countries, thereby allowing volume or output comparisons of GDP and its expenditure components.",
+        "sourceOrganization": "International Comparison Program (ICP), World Bank (WB), uri: https://www.worldbank.org/en/programs/icp/data, note: This information is for ICP’s PPPs utilized in WDI, publisher: International Comparison Program (ICP), date accessed: May 30, 2024, date published: May 30, 2024;\nThe Eurostat PPP Programme, Eurostat (ESTAT), uri: https://ec.europa.eu/eurostat/databrowser/explore/all/all_themes, publisher: Eurostat;\nThe OECD PPP Programme, Organisation for Economic Co-operation and Development (OECD), uri: https://data-explorer.oecd.org/, publisher: OECD;\nStaff estimates, World Bank (WB);\nNational Accounts data files, Organisation for Economic Co-operation and Development (OECD);\nWorld Economic Outlook database, International Monetary Fund (IMF)",
+        "topics": [
+          {
+            "id": "3",
+            "value": "Economy & Growth"
+          }
+        ]
+      }
+    ]
+  ],
+  "NY.GDP.PCAP.PP.KD": [
+    {
+      "page": 1,
+      "pages": 1,
+      "per_page": "50",
+      "total": 1
+    },
+    [
+      {
+        "id": "NY.GDP.PCAP.PP.KD",
+        "name": "GDP per capita, PPP (constant 2021 international $)",
+        "unit": "",
+        "source": {
+          "id": "2",
+          "value": "World Development Indicators"
+        },
+        "sourceNote": "This indicator provides values for gross domestic product (GDP) per person expressed in constant international dollars, converted by purchasing power parities (PPPs). PPPs account for the different price levels across countries and thus PPP-based comparisons of economic output are more appropriate for comparing the output of economies and the average material well-being of their inhabitants than exchange-rate based comparisons. \n\nGross domestic product is the total income earned through the production of goods and services in an economic territory during an accounting period. It can be measured in three different ways: using either the expenditure approach, the income approach, or the production approach. The core indicator has been divided by the general population to achieve a per capita estimate. This indicator is expressed in constant prices, meaning the series has been adjusted to account for price changes over time. The reference year for this adjustment is 2021. The PPP conversion factor is a currency conversion factor and a spatial price deflator. PPPs convert different currencies to a common currency and, in the process of conversion, equalize their purchasing power by eliminating the differences in price levels between countries, thereby allowing volume or output comparisons of GDP and its expenditure components.",
+        "sourceOrganization": "International Comparison Program (ICP), World Bank (WB), uri: https://www.worldbank.org/en/programs/icp/data, note: This information is for ICP’s PPPs utilized in WDI, publisher: International Comparison Program (ICP), date accessed: May 30, 2024, date published: May 30, 2024;\nThe Eurostat PPP Programme, Eurostat (ESTAT), uri: https://ec.europa.eu/eurostat/databrowser/explore/all/all_themes, publisher: Eurostat;\nThe OECD PPP Programme, Organisation for Economic Co-operation and Development (OECD), uri: https://data-explorer.oecd.org/, publisher: OECD;\nStaff estimates, World Bank (WB);\nNational Accounts data files, Organisation for Economic Co-operation and Development (OECD);\nWorld Economic Outlook database, International Monetary Fund (IMF)",
+        "topics": [
+          {
+            "id": "3",
+            "value": "Economy & Growth"
+          }
+        ]
+      }
+    ]
+  ],
+  "NY.GNP.PCAP.PP.KD": [
+    {
+      "page": 1,
+      "pages": 1,
+      "per_page": "50",
+      "total": 1
+    },
+    [
+      {
+        "id": "NY.GNP.PCAP.PP.KD",
+        "name": "GNI per capita, PPP (constant 2021 international $)",
+        "unit": "",
+        "source": {
+          "id": "2",
+          "value": "World Development Indicators"
+        },
+        "sourceNote": "This indicator provides values for gross national income (GNI) per person expressed in constant international dollars, converted by purchasing power parities (PPPs). PPPs account for the different price levels across countries and thus PPP-based comparisons of economic output are more appropriate for comparing the output of economies and the average material well-being of their inhabitants than exchange-rate based comparisons. \n\nGross national income is the total income earned by all residents within an economic territory during an accounting period. It is equal to gross domestic product plus earned income receivable from abroad minus earned income payable abroad. The core indicator has been divided by the general population to achieve a per capita estimate. This indicator is expressed in constant prices, meaning the series has been adjusted to account for price changes over time. The reference year for this adjustment is 2021. The PPP conversion factor is a currency conversion factor and a spatial price deflator. PPPs convert different currencies to a common currency and, in the process of conversion, equalize their purchasing power by eliminating the differences in price levels between countries, thereby allowing volume or output comparisons of GDP and its expenditure components.",
+        "sourceOrganization": "International Comparison Program (ICP), World Bank (WB), uri: https://www.worldbank.org/en/programs/icp/data, note: This information is for ICP’s PPPs utilized in WDI, publisher: International Comparison Program (ICP), date accessed: May 30, 2024, date published: May 30, 2024;\nThe Eurostat PPP Programme, Eurostat (ESTAT), uri: https://ec.europa.eu/eurostat/databrowser/explore/all/all_themes, publisher: Eurostat;\nThe OECD PPP Programme, Organisation for Economic Co-operation and Development (OECD), uri: https://data-explorer.oecd.org/, publisher: OECD;\nStaff estimates, World Bank (WB);\nNational Accounts data files, Organisation for Economic Co-operation and Development (OECD);\nWorld Economic Outlook database, International Monetary Fund (IMF)",
+        "topics": [
+          {
+            "id": "3",
+            "value": "Economy & Growth"
+          }
+        ]
+      }
+    ]
+  ],
+  "NY.GDP.MKTP.KD.ZG": [
+    {
+      "page": 1,
+      "pages": 1,
+      "per_page": "50",
+      "total": 1
+    },
+    [
+      {
+        "id": "NY.GDP.MKTP.KD.ZG",
+        "name": "GDP growth (annual %)",
+        "unit": "",
+        "source": {
+          "id": "2",
+          "value": "World Development Indicators"
+        },
+        "sourceNote": "Gross domestic product is the total income earned through the production of goods and services in an economic territory during an accounting period. It can be measured in three different ways: using either the expenditure approach, the income approach, or the production approach. This indicator denotes the percentage change over each previous year of the constant price (base year 2015) series in United States dollars.",
+        "sourceOrganization": "Country official statistics, National Statistical Organizations and/or Central Banks;\nNational Accounts data files, Organisation for Economic Co-operation and Development (OECD);\nStaff estimates, World Bank (WB)",
+        "topics": [
+          {
+            "id": "3",
+            "value": "Economy & Growth"
+          }
+        ]
+      }
+    ]
+  ],
+  "NY.GDP.PCAP.KD.ZG": [
+    {
+      "page": 1,
+      "pages": 1,
+      "per_page": "50",
+      "total": 1
+    },
+    [
+      {
+        "id": "NY.GDP.PCAP.KD.ZG",
+        "name": "GDP per capita growth (annual %)",
+        "unit": "",
+        "source": {
+          "id": "2",
+          "value": "World Development Indicators"
+        },
+        "sourceNote": "Gross domestic product is the total income earned through the production of goods and services in an economic territory during an accounting period. It can be measured in three different ways: using either the expenditure approach, the income approach, or the production approach. The core indicator has been divided by the general population to achieve a per capita estimate.This indicator denotes the percentage change over each previous year of the constant price (base year 2015) series in United States dollars.",
+        "sourceOrganization": "Country official statistics, National Statistical Organizations and/or Central Banks;\nNational Accounts data files, Organisation for Economic Co-operation and Development (OECD);\nStaff estimates, World Bank (WB)",
+        "topics": [
+          {
+            "id": "3",
+            "value": "Economy & Growth"
+          }
+        ]
+      }
+    ]
+  ],
+  "FP.CPI.TOTL.ZG": [
+    {
+      "page": 1,
+      "pages": 1,
+      "per_page": "50",
+      "total": 1
+    },
+    [
+      {
+        "id": "FP.CPI.TOTL.ZG",
+        "name": "Inflation, consumer prices (annual %)",
+        "unit": "",
+        "source": {
+          "id": "2",
+          "value": "World Development Indicators"
+        },
+        "sourceNote": "Inflation as measured by the consumer price index reflects the annual percentage change in the cost to the average consumer of acquiring a basket of goods and services that may be fixed or changed at specified intervals, such as yearly.",
+        "sourceOrganization": "International Financial Statistics database, International Monetary Fund (IMF)",
+        "topics": [
+          {
+            "id": "3",
+            "value": "Economy & Growth"
+          },
+          {
+            "id": "7",
+            "value": "Financial Sector "
+          }
+        ]
+      }
+    ]
+  ],
+  "NY.GDP.DEFL.KD.ZG": [
+    {
+      "page": 1,
+      "pages": 1,
+      "per_page": "50",
+      "total": 1
+    },
+    [
+      {
+        "id": "NY.GDP.DEFL.KD.ZG",
+        "name": "Inflation, GDP deflator (annual %)",
+        "unit": "",
+        "source": {
+          "id": "2",
+          "value": "World Development Indicators"
+        },
+        "sourceNote": "Inflation as measured by the annual growth rate of the GDP implicit deflator shows the rate of price change in the economy as a whole. The GDP implicit deflator is the ratio of GDP in current local currency to GDP in constant local currency.",
+        "sourceOrganization": "Country official statistics, National Statistical Offices (NSOs);\nNational Accounts data files, Central Banks;\nStaff estimates, World Bank (WB)",
+        "topics": [
+          {
+            "id": "3",
+            "value": "Economy & Growth"
+          }
+        ]
+      }
+    ]
+  ],
+  "SP.POP.TOTL": [
+    {
+      "page": 1,
+      "pages": 1,
+      "per_page": "50",
+      "total": 1
+    },
+    [
+      {
+        "id": "SP.POP.TOTL",
+        "name": "Population, total",
+        "unit": "",
+        "source": {
+          "id": "2",
+          "value": "World Development Indicators"
+        },
+        "sourceNote": "Total population is based on the de facto definition of population, which counts all residents regardless of legal status or citizenship. The values shown are midyear estimates.",
+        "sourceOrganization": "World Population Prospects, United Nations (UN), uri: https://population.un.org/wpp/, publisher: UN Population Division;\nStatistical databases and publications from national statistical offices, National Statistical Offices (NSOs), uri: https://unstats.un.org/home/nso_sites/, publisher: National Statistical Offices;\nEurostat: Demographic Statistics, Eurostat (ESTAT), uri: https://ec.europa.eu/eurostat/data/database?node_code=earn_ses_monthly, publisher: Eurostat;\nPopulation and Vital Statistics Report (various years), United Nations (UN), uri: https://unstats.un.org, publisher: UN Statistics Division",
+        "topics": [
+          {
+            "id": "19",
+            "value": "Climate Change"
+          },
+          {
+            "id": "8",
+            "value": "Health "
+          }
+        ]
+      }
+    ]
+  ],
+  "EN.POP.DNST": [
+    {
+      "page": 1,
+      "pages": 1,
+      "per_page": "50",
+      "total": 1
+    },
+    [
+      {
+        "id": "EN.POP.DNST",
+        "name": "Population density (people per sq. km of land area)",
+        "unit": "",
+        "source": {
+          "id": "2",
+          "value": "World Development Indicators"
+        },
+        "sourceNote": "Population density is midyear population divided by land area in square kilometers. Population is based on the de facto definition of population, which counts all residents regardless of legal status or citizenship--except for refugees not permanently settled in the country of asylum, who are generally considered part of the population of their country of origin. Land area is a country's total area, excluding area under inland water bodies, national claims to continental shelf, and exclusive economic zones. In most cases the definition of inland water bodies includes major rivers and lakes.",
+        "sourceOrganization": "FAO population estimates, Food and Agriculture Organization of the United Nations (FAO), publisher: Food and Agriculture Organization of the United Nations (FAO);\nWorld Bank population estimates, World Bank (WB), publisher: World Bank (WB)",
+        "topics": [
+          {
+            "id": "16",
+            "value": "Urban Development "
+          }
+        ]
+      }
+    ]
+  ],
+  "SP.POP.GROW": [
+    {
+      "page": 1,
+      "pages": 1,
+      "per_page": "50",
+      "total": 1
+    },
+    [
+      {
+        "id": "SP.POP.GROW",
+        "name": "Population growth (annual %)",
+        "unit": "",
+        "source": {
+          "id": "2",
+          "value": "World Development Indicators"
+        },
+        "sourceNote": "Annual population growth rate for year t is the exponential rate of growth of midyear population from year t-1 to t, expressed as a percentage. Population is based on the de facto definition of population, which counts all residents regardless of legal status or citizenship.",
+        "sourceOrganization": "World Population Prospects, United Nations (UN), note: Derived from total population, publisher: UN Population Division;\nStatistical databases and publications from national statistical offices, National Statistical Offices (NSOs), note: Derived from total population;\nDemographic Statistics, Eurostat (ESTAT), note: Derived from total population;\nPopulation and Vital Statistics Report (various years), United Nations (UN), note: Derived from total population, publisher: UN Statistical Division",
+        "topics": [
+          {
+            "id": "19",
+            "value": "Climate Change"
+          },
+          {
+            "id": "8",
+            "value": "Health "
+          }
+        ]
+      }
+    ]
+  ],
+  "SP.URB.TOTL": [
+    {
+      "page": 1,
+      "pages": 1,
+      "per_page": "50",
+      "total": 1
+    },
+    [
+      {
+        "id": "SP.URB.TOTL",
+        "name": "Urban population",
+        "unit": "",
+        "source": {
+          "id": "2",
+          "value": "World Development Indicators"
+        },
+        "sourceNote": "Urban population refers to people living in urban areas as defined by national statistical offices. It is calculated using World Bank population estimates and urban ratios from the United Nations World Urbanization Prospects. Aggregation of urban and rural population may not add up to total population because of different country coverages.",
+        "sourceOrganization": "World Urbanization Prospects, United Nations (UN), uri: https://population.un.org/wup/, note: World Bank staff estimates based on the United Nations Population Division's World Urbanization Prospects, National definitions, publisher: UN Population Division;\nStaff estimates, World Bank (WB), note: World Bank staff estimates based on the United Nations Population Division's World Urbanization Prospects, National definitions",
+        "topics": [
+          {
+            "id": "19",
+            "value": "Climate Change"
+          },
+          {
+            "id": "16",
+            "value": "Urban Development "
+          }
+        ]
+      }
+    ]
+  ],
+  "SP.URB.TOTL.IN.ZS": [
+    {
+      "page": 1,
+      "pages": 1,
+      "per_page": "50",
+      "total": 1
+    },
+    [
+      {
+        "id": "SP.URB.TOTL.IN.ZS",
+        "name": "Urban population (% of total population)",
+        "unit": "",
+        "source": {
+          "id": "2",
+          "value": "World Development Indicators"
+        },
+        "sourceNote": "Urban population refers to people living in urban areas as defined by national statistical offices. The data are collected and smoothed by United Nations Population Division.",
+        "sourceOrganization": "World Urbanization Prospects, United Nations (UN), uri: https://population.un.org/wup/, note: United Nations Population Division's World Urbanization Prospects, National definitions, publisher: UN Population Division",
+        "topics": [
+          {
+            "id": "19",
+            "value": "Climate Change"
+          },
+          {
+            "id": "16",
+            "value": "Urban Development "
+          }
+        ]
+      }
+    ]
+  ],
+  "SP.RUR.TOTL": [
+    {
+      "page": 1,
+      "pages": 1,
+      "per_page": "50",
+      "total": 1
+    },
+    [
+      {
+        "id": "SP.RUR.TOTL",
+        "name": "Rural population",
+        "unit": "",
+        "source": {
+          "id": "2",
+          "value": "World Development Indicators"
+        },
+        "sourceNote": "Rural population refers to people living in rural areas as defined by national statistical offices. It is calculated as the difference between total population and urban population. Aggregation of urban and rural population may not add up to total population because of different country coverages.",
+        "sourceOrganization": "World Urbanization Prospects, United Nations (UN), uri: https://population.un.org/wup/, note: World Bank staff estimates based on the United Nations Population Division's World Urbanization Prospects, National definitions, publisher: UN Population Division;\nStaff estimates, World Bank (WB), note: World Bank staff estimates based on the United Nations Population Division's World Urbanization Prospects, National definitions",
+        "topics": [
+          {
+            "id": "1",
+            "value": "Agriculture & Rural Development  "
+          }
+        ]
+      }
+    ]
+  ],
+  "EN.URB.MCTY.TL.ZS": [
+    {
+      "page": 1,
+      "pages": 1,
+      "per_page": "50",
+      "total": 1
+    },
+    [
+      {
+        "id": "EN.URB.MCTY.TL.ZS",
+        "name": "Population in urban agglomerations of more than 1 million (% of total population)",
+        "unit": "",
+        "source": {
+          "id": "2",
+          "value": "World Development Indicators"
+        },
+        "sourceNote": "Population in urban agglomerations of more than one million is the percentage of a country's population living in metropolitan areas that in 2018 had a population of more than one million people.",
+        "sourceOrganization": "World Urbanization Prospects 2018, United Nations (UN), uri: https://population.un.org/wup/, publisher: UN Population Division, date published: 2018",
+        "topics": [
+          {
+            "id": "19",
+            "value": "Climate Change"
+          },
+          {
+            "id": "16",
+            "value": "Urban Development "
+          }
+        ]
+      }
+    ]
+  ],
+  "AG.LND.TOTL.K2": [
+    {
+      "page": 1,
+      "pages": 1,
+      "per_page": "50",
+      "total": 1
+    },
+    [
+      {
+        "id": "AG.LND.TOTL.K2",
+        "name": "Land area (sq. km)",
+        "unit": "",
+        "source": {
+          "id": "2",
+          "value": "World Development Indicators"
+        },
+        "sourceNote": "Land area is a country's total area, excluding area under inland water bodies, national claims to continental shelf, and exclusive economic zones. In most cases the definition of inland water bodies includes major rivers and lakes.",
+        "sourceOrganization": "FAOSTAT, Food and Agriculture Organization of the United Nations (FAO), uri: https://www.fao.org/faostat/en/#data/RL, publisher: Food and Agriculture Organization of the United Nations (FAO)",
+        "topics": [
+          {
+            "id": "1",
+            "value": "Agriculture & Rural Development  "
+          },
+          {
+            "id": "6",
+            "value": "Environment "
+          }
+        ]
+      }
+    ]
+  ],
+  "SP.POP.65UP.TO.ZS": [
+    {
+      "page": 1,
+      "pages": 1,
+      "per_page": "50",
+      "total": 1
+    },
+    [
+      {
+        "id": "SP.POP.65UP.TO.ZS",
+        "name": "Population ages 65 and above (% of total population)",
+        "unit": "",
+        "source": {
+          "id": "2",
+          "value": "World Development Indicators"
+        },
+        "sourceNote": "Population ages 65 and above as a percentage of the total population. Population is based on the de facto definition of population, which counts all residents regardless of legal status or citizenship.",
+        "sourceOrganization": "World Population Prospects, United Nations (UN), publisher: UN Population Division",
+        "topics": [
+          {
+            "id": "8",
+            "value": "Health "
+          }
+        ]
+      }
+    ]
+  ],
+  "SI.POV.GINI": [
+    {
+      "page": 1,
+      "pages": 1,
+      "per_page": "50",
+      "total": 1
+    },
+    [
+      {
+        "id": "SI.POV.GINI",
+        "name": "Gini index",
+        "unit": "",
+        "source": {
+          "id": "2",
+          "value": "World Development Indicators"
+        },
+        "sourceNote": "Gini index measures the extent to which the distribution of income (or, in some cases, consumption expenditure) among individuals or households within an economy deviates from a perfectly equal distribution. A Lorenz curve plots the cumulative percentages of total income received against the cumulative number of recipients, starting with the poorest individual or household. The Gini index measures the area between the Lorenz curve and a hypothetical line of absolute equality, expressed as a percentage of the maximum area under the line. Thus a Gini index of 0 represents perfect equality, while an index of 100 implies perfect inequality.",
+        "sourceOrganization": "World Bank, Poverty and Inequality Platform. Data are based on primary household survey data obtained from government statistical agencies and World Bank country departments. Data for high-income economies are mostly from the Luxembourg Income Study database. For more information and methodology, please see http://pip.worldbank.org., World Bank (WB), uri: http://pip.worldbank.org, note: Data are based on primary household survey data obtained from government statistical agencies and World Bank country departments. Data for high-income economies are mostly from the Luxembourg Income Study database.",
+        "topics": [
+          {
+            "id": "11",
+            "value": "Poverty "
+          }
+        ]
+      }
+    ]
+  ],
+  "NY.ADJ.SVNG.GN.ZS": [
+    {
+      "page": 1,
+      "pages": 1,
+      "per_page": "50",
+      "total": 1
+    },
+    [
+      {
+        "id": "NY.ADJ.SVNG.GN.ZS",
+        "name": "Adjusted net savings, including particulate emission damage (% of GNI)",
+        "unit": "",
+        "source": {
+          "id": "2",
+          "value": "World Development Indicators"
+        },
+        "sourceNote": "Adjusted net savings are equal to net national savings plus education expenditure and minus energy depletion, mineral depletion, net forest depletion, and carbon dioxide and particulate emissions damage. This indicator is expressed as a percentage of Gross National Income (GNI) which is the total income earned by all residents within an economic territory during an accounting period. It is equal to gross domestic product plus earned income receivable from abroad minus earned income payable abroad.",
+        "sourceOrganization": "Staff estimates, World Bank (WB);\nThe Changing Wealth of Nations: Measuring Sustainable Development in the New Millennium, World Bank (WB)",
+        "topics": [
+          {
+            "id": "3",
+            "value": "Economy & Growth"
+          },
+          {
+            "id": "6",
+            "value": "Environment "
+          }
+        ]
+      }
+    ]
+  ],
+  "EG.ELC.ACCS.ZS": [
+    {
+      "page": 1,
+      "pages": 1,
+      "per_page": "50",
+      "total": 1
+    },
+    [
+      {
+        "id": "EG.ELC.ACCS.ZS",
+        "name": "Access to electricity (% of population)",
+        "unit": "",
+        "source": {
+          "id": "2",
+          "value": "World Development Indicators"
+        },
+        "sourceNote": "Access to electricity is the percentage of population with access to electricity. Electrification data are collected from industry, national surveys and international sources.",
+        "sourceOrganization": "SDG 7.1.1 Electrification Dataset, World Bank (WB), uri: https://trackingsdg7.esmap.org/downloads, note: Data is downloaded from ESMAP website. Data is released when a new Tracking SDG7 report is released., publisher: World Bank (WB), date accessed: 2024-05-16, date published: 2023",
+        "topics": [
+          {
+            "id": "5",
+            "value": "Energy & Mining "
+          },
+          {
+            "id": "19",
+            "value": "Climate Change"
+          },
+          {
+            "id": "6",
+            "value": "Environment "
+          }
+        ]
+      }
+    ]
+  ],
+  "SH.XPD.CHEX.GD.ZS": [
+    {
+      "page": 1,
+      "pages": 1,
+      "per_page": "50",
+      "total": 1
+    },
+    [
+      {
+        "id": "SH.XPD.CHEX.GD.ZS",
+        "name": "Current health expenditure (% of GDP)",
+        "unit": "",
+        "source": {
+          "id": "2",
+          "value": "World Development Indicators"
+        },
+        "sourceNote": "Level of current health expenditure expressed as a percentage of GDP.  Estimates of current health expenditures include healthcare goods and services consumed during each year. This indicator does not include capital health expenditures such as buildings, machinery, IT and stocks of vaccines for emergency or outbreaks.",
+        "sourceOrganization": "Global Health Expenditure Database, updated December 12th, 2025, World Health Organization (WHO), uri: https://apps.who.int/nha/database",
+        "topics": [
+          {
+            "id": "8",
+            "value": "Health "
+          }
+        ]
+      }
+    ]
+  ],
+  "SL.UEM.TOTL.ZS": [
+    {
+      "page": 1,
+      "pages": 1,
+      "per_page": "50",
+      "total": 1
+    },
+    [
+      {
+        "id": "SL.UEM.TOTL.ZS",
+        "name": "Unemployment, total (% of total labor force) (modeled ILO estimate)",
+        "unit": "",
+        "source": {
+          "id": "2",
+          "value": "World Development Indicators"
+        },
+        "sourceNote": "Unemployment refers to the share of the labor force that is without work but available for and seeking employment.",
+        "sourceOrganization": "ILO Modelled Estimates database (ILOEST), International Labour Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT, type: external database, date accessed: January 17, 2026",
+        "topics": [
+          {
+            "id": "4",
+            "value": "Education "
+          },
+          {
+            "id": "10",
+            "value": "Social Protection & Labor"
+          }
+        ]
+      }
+    ]
+  ],
+  "SH.MED.PHYS.ZS": [
+    {
+      "page": 1,
+      "pages": 1,
+      "per_page": "50",
+      "total": 1
+    },
+    [
+      {
+        "id": "SH.MED.PHYS.ZS",
+        "name": "Physicians (per 1,000 people)",
+        "unit": "",
+        "source": {
+          "id": "2",
+          "value": "World Development Indicators"
+        },
+        "sourceNote": "Physicians include generalist and specialist medical practitioners.",
+        "sourceOrganization": "Global Health Workforce Statistics, World Health Organization (WHO);\nOrganisation for Economic Co-operation and Development (OECD);\nCountry data",
+        "topics": [
+          {
+            "id": "8",
+            "value": "Health "
+          }
+        ]
+      }
+    ]
+  ],
+  "SH.MED.BEDS.ZS": [
+    {
+      "page": 1,
+      "pages": 1,
+      "per_page": "50",
+      "total": 1
+    },
+    [
+      {
+        "id": "SH.MED.BEDS.ZS",
+        "name": "Hospital beds (per 1,000 people)",
+        "unit": "",
+        "source": {
+          "id": "2",
+          "value": "World Development Indicators"
+        },
+        "sourceNote": "Hospital beds include inpatient beds available in public, private, general, and specialized hospitals and rehabilitation centers. In most cases beds for both acute and chronic care are included.",
+        "sourceOrganization": "WHO data, supplemented by country data, World Health Organization (WHO)",
+        "topics": [
+          {
+            "id": "8",
+            "value": "Health "
+          }
+        ]
+      }
+    ]
+  ],
+  "SP.DYN.LE00.IN": [
+    {
+      "page": 1,
+      "pages": 1,
+      "per_page": "50",
+      "total": 1
+    },
+    [
+      {
+        "id": "SP.DYN.LE00.IN",
+        "name": "Life expectancy at birth, total (years)",
+        "unit": "",
+        "source": {
+          "id": "2",
+          "value": "World Development Indicators"
+        },
+        "sourceNote": "Life expectancy at birth indicates the number of years a newborn infant would live if prevailing patterns of mortality at the time of its birth were to stay the same throughout its life.",
+        "sourceOrganization": "World Population Prospects, United Nations (UN), uri: UN Population Division;\nStatistical databases and publications from national statistical offices, National Statistical Offices (NSOs), note: Derived from male and female life expectancy at birth from sources such as statistical databases and publications from national statistical offices.;\nDemographic Statistics, Eurostat (ESTAT), note: Derived from male and female life expectancy at birth from sources such as Eurostat: Demographic Statistics.",
+        "topics": [
+          {
+            "id": "8",
+            "value": "Health "
+          }
+        ]
+      }
+    ]
+  ],
+  "EN.POP.SLUM.UR.ZS": [
+    {
+      "page": 1,
+      "pages": 1,
+      "per_page": "50",
+      "total": 1
+    },
+    [
+      {
+        "id": "EN.POP.SLUM.UR.ZS",
+        "name": "Population living in slums (% of urban population)",
+        "unit": "",
+        "source": {
+          "id": "2",
+          "value": "World Development Indicators"
+        },
+        "sourceNote": "Population living in slums is the proportion of the urban population living in slum households. A slum household is defined as a group of individuals living under the same roof lacking one or more of the following conditions: access to improved water, access to improved sanitation, sufficient living area, housing durability, and security of tenure, as adopted in the Millennium Development Goal Target 7.D. The successor, the Sustainable Development Goal 11.1.1, considers inadequate housing (housing affordability) to complement the above definition of slums/informal settlements.",
+        "sourceOrganization": "Urban Indicators Database, UN Human Settlements Programme (UN-Habitat), uri: https://data.unhabitat.org/",
+        "topics": [
+          {
+            "id": "11",
+            "value": "Poverty "
+          },
+          {
+            "id": "16",
+            "value": "Urban Development "
+          },
+          {
+            "id": "6",
+            "value": "Environment "
+          }
+        ]
+      }
+    ]
+  ]
+}

@@ -3630,7 +3630,7 @@ time,latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,place,
 2023-12-22T17:36:32.014Z,-52.0879,27.9516,10,6.1,mww,284,19,16.565,0.8,us,us7000lkxb,2024-02-27T22:57:04.040Z,"south of Africa",earthquake,9.31,1.668,0.065,23,reviewed,us,us
 2023-12-28T09:15:16.131Z,44.596,149.0388,31,6.5,mww,156,34,4.647,0.9,us,us6000m05c,2024-03-02T21:39:32.040Z,"115 km SE of Kuril’sk, Russia",earthquake,7.66,1.777,0.048,42,reviewed,us,us
 2023-12-30T17:16:23.833Z,-2.9934,139.372,33,6.3,mww,190,15,1.412,0.81,us,us6000m0n6,2024-05-23T16:43:01.175Z,"146 km WSW of Abepura, Indonesia",earthquake,6.56,1.732,0.073,18,reviewed,us,us
-2024-01-01T07:10:09.476Z,37.4874,137.271,10,7.5,mww,282,36,0.957,0.55,us,us6000m0xl,2026-10-10T06:13:09.213Z,"2024 Noto Peninsula, Japan Earthquake",earthquake,4.03,1.807,0.034,82,reviewed,us,us
+2024-01-01T07:10:09.476Z,37.4874,137.271,10,7.5,mww,282,36,0.957,0.55,us,us6000m0xl,2026-10-30T17:01:15.934Z,"2024 Noto Peninsula, Japan Earthquake",earthquake,4.03,1.807,0.034,82,reviewed,us,us
 2024-01-01T07:18:41.584Z,37.1895,136.8272,10,6.2,mb,185,32,1.278,0.4,us,us6000m0xm,2025-01-04T22:53:01.431Z,"8 km SW of Anamizu, Japan",earthquake,1.95,1.794,0.024,672,reviewed,us,us
 2024-01-08T20:48:42.361Z,4.9225,126.1575,62.574,6.7,mww,138,22,2.209,0.76,us,us6000m2jp,2024-03-16T19:00:03.040Z,"93 km SE of Sarangani, Philippines",earthquake,7.15,3.404,0.06,27,reviewed,us,us
 2024-01-11T09:20:26.337Z,36.4979,70.6013,204,6.4,mww,140,17,3.122,1.02,us,us6000m31m,2024-03-16T19:00:18.040Z,"45 km SSW of Jurm, Afghanistan",earthquake,6.09,1.879,0.039,62,reviewed,us,us
@@ -3864,7 +3864,7 @@ time,latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,place,
 2025-11-10T07:23:17.302Z,39.5665,143.4526,11,6,mww,300,55,2.2,0.42,us,us6000rmk2,2026-01-29T22:05:29.040Z,"129 km E of Yamada, Japan",earthquake,3.12,1.733,0.054,33,reviewed,us,us
 2025-11-27T04:56:24.368Z,2.7191,95.9543,17,6.4,mww,175,41,2.966,0.96,us,us7000re2g,2026-02-25T16:18:34.040Z,"54 km WNW of Sinabang, Indonesia",earthquake,8.32,1.827,0.045,48,reviewed,us,us
 2025-11-27T17:11:29.059Z,61.569519042969,-150.75079345703,69.433395385742,6,mww,225,13.682067871094,0.47020506858826,1.1860668337292,ak,ak2025xjbvhj,2026-10-29T17:21:32.028Z,"12 km WNW of Susitna, Alaska",earthquake,0,1.4379519224167,0.025,153,reviewed,ak,us
-2025-12-06T20:41:49.288Z,60.3127,-139.5412,10.317,7,mww,270,29,0.417,0.76,us,us6000rsy1,2026-10-24T20:51:52.935Z,"2025 Hubbard Glacier Earthquake",earthquake,4.11,3.297,0.026,137,reviewed,us,us
+2025-12-06T20:41:49.288Z,60.3127,-139.5412,10.317,7,mww,270,29,0.417,0.76,us,us6000rsy1,2026-10-31T20:52:05.923Z,"2025 Hubbard Glacier Earthquake",earthquake,4.11,3.297,0.026,137,reviewed,us,us
 2025-12-08T14:15:09.896Z,40.9984,142.1836,40.72,7.6,mww,170,17,0.874,0.72,us,us6000rtdt,2026-06-16T12:34:19.815Z,"2025 Aomori Prefecture, Japan Earthquake",earthquake,9.62,4.629,0.024,166,reviewed,us,us
 2025-12-08T18:56:28.302Z,40.9878,143.1226,22.788,6,mww,119,50,1.027,0.7,us,us6000rtgd,2026-03-04T18:43:38.040Z,"127 km S of Honchō, Japan",earthquake,7.74,4.394,0.089,12,reviewed,us,us
 2025-12-08T21:52:41.325Z,40.9761,143.1504,19,6.6,mww,140,29,1.038,0.64,us,us6000rtie,2026-03-04T18:43:42.040Z,"129 km S of Honchō, Japan",earthquake,5.69,1.733,0.068,21,reviewed,us,us

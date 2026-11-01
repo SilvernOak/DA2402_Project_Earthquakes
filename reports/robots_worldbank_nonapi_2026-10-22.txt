@@ -1,0 +1,58 @@
+Requested URL: https://worldbank.org/robots.txt
+Final URL: https://www.worldbank.org/robots.txt
+HTTP status: 200
+
+User-agent: *
+Allow: /
+
+# --- Adobe Edge Optimize crawler ---
+User-agent: AdobeEdgeOptimize/1.0
+Allow: /
+
+# --- System / platform paths ---
+Disallow: /apps/
+Disallow: /conf/
+Disallow: /misc/
+Disallow: /wbg/services/
+Disallow: /wbg/aem/
+Disallow: /fragments/
+Disallow: /fragment/
+Disallow: /downloadstats/
+Disallow: /content/search
+Disallow: /*/search
+Disallow: /*/webarchives/archive
+Disallow: /*.print
+
+# --- One-off retired pages ---
+Disallow: /*/programs/umbrellafacilityforgenderequality/brief/ufge-partnership-council-meeting
+
+# --- Retired templates: blocked entirely, all years, all locales ---
+Disallow: /*/news/infographic/
+Disallow: /*/news/loans-credits/
+Disallow: /*/news/opinion/
+Disallow: /*/data/interactive/
+
+# --- Migrated templates: pre-2020 content retired (19xx, 200x, 201x) ---
+Disallow: /*/news/factsheet/19
+Disallow: /*/news/factsheet/200
+Disallow: /*/news/factsheet/201
+Disallow: /*/news/feature/19
+Disallow: /*/news/feature/200
+Disallow: /*/news/feature/201
+Disallow: /*/news/immersive-story/19
+Disallow: /*/news/immersive-story/200
+Disallow: /*/news/immersive-story/201
+Disallow: /*/news/press-release/19
+Disallow: /*/news/press-release/200
+Disallow: /*/news/press-release/201
+Disallow: /*/news/speech/19
+Disallow: /*/news/speech/200
+Disallow: /*/news/speech/201
+Disallow: /*/news/statement/19
+Disallow: /*/news/statement/200
+Disallow: /*/news/statement/201
+Disallow: /*/results/19
+Disallow: /*/results/200
+Disallow: /*/results/201
+
+Sitemap: https://www.worldbank.org/sitemap.xml
