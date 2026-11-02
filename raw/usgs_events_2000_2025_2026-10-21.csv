@@ -3872,5 +3872,5 @@ time,latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,place,
 2025-12-22T10:31:27.918Z,-5.7036,145.5368,107,6.5,mww,129,14,4.013,1.01,us,us6000rwgh,2026-03-19T13:56:11.040Z,"45 km NNE of Goroka, Papua New Guinea",earthquake,6.99,1.855,0.044,50,reviewed,us,us
 2025-12-24T09:47:06.669Z,22.8982,121.2494,8,6,mww,212,47,0.176,0.62,us,us7000rkjm,2026-04-01T22:48:01.040Z,"2025 Taitung, Taiwan Earthquake",earthquake,5.82,1.834,0.043,52,reviewed,us,us
 2025-12-27T15:05:55.388Z,24.6841,122.0354,63,6.6,mww,298,9,0.568,0.76,us,us7000rl2n,2026-04-17T00:47:10.433Z,"29 km ESE of Yilan, Taiwan",earthquake,5.06,1.818,0.033,88,reviewed,us,us
-2025-12-28T02:51:49.922Z,-8.9834,-79.039,58,6.2,mww,112,40,3.685,0.97,us,us7000rl57,2026-08-17T19:04:24.241Z,"43 km W of Puerto Santa, Peru",earthquake,8.62,1.901,0.052,35,reviewed,us,us
+2025-12-28T02:51:49.922Z,-8.9834,-79.039,58,6.2,mww,112,40,3.685,0.97,us,us7000rl57,2026-11-01T22:28:13.873Z,"43 km W of Puerto Santa, Peru",earthquake,8.62,1.901,0.052,35,reviewed,us,us
 2025-12-31T14:26:57.992Z,40.1161,142.9454,27,6,mww,242,29,1.585,0.52,us,us7000rlq3,2026-04-01T22:48:47.040Z,"96 km E of Noda, Japan",earthquake,6.06,1.772,0.052,35,reviewed,us,us
