@@ -1,0 +1,23 @@
+step,source,operation,rows_affected,before_count,after_count,reason
+1,USGS,Filter non-earthquake events,1,3875,3874,Dropped 1 nuclear explosion
+2,USGS+NOAA,Standardize date formats,5328,5328,0,Converted unformatted date strings/ints to YYYY-MM-DD
+3,USGS,Standardize magnitude scales,3764,9 scales,5 scales,Unified moment magnitude variants into Mw
+4,USGS,Reverse-geocode coordinates to ISO-3,1146,112 raw tails,72 countries,Mapped coords to Natural Earth ISO-3 polygons (<=1.5 deg)
+5,NOAA,Fix uppercase country names,1454,1454,0,Converted ALL-CAPS country names to Title Case
+6,USGS+NOAA,Remove exact ID duplicates,0,3874,3874,Verified unique primary keys across both sources
+7,USGS,Deduplicate foreshock/aftershock clusters,514,3874,3360,Collapsed shocks within 2 days & 150km into mainshock
+8,USGS+NOAA,Cross-source spatiotemporal join,693,3360,3360,Matched NOAA to USGS 1-to-1 within 1 day & 150km
+9,USGS+NOAA,Resolve coastal offshore matches,71,1477,1406,Snapped NOAA-matched offshore quakes within 5 deg to coast
+10,USGS+NOAA,Impute structural zeros for missing deaths,3031,3031,0,MAR verified via Mann-Whitney U (p<0.001); unrecorded quakes imputed as 0
+11,USGS,Flag network default depths,788,788,788,Flagged 10km/33km seismic placeholder depths rather than deleting
+12,USGS+NOAA,Diagnose IQR outliers,532,532,532,Diagnosed deep quakes & mega-disasters via 1.5*IQR; kept as real values
+13,Wikipedia,Parse Wikipedia death-toll strings & ranges,3139,3139 unformatted strings,716 clean floats,"Converted ranges to midpoints, stripped 'est.'/footnotes, and recovered text-bullet deaths"
+14,Wikipedia,Standardize Wikipedia table dates to YYYY-MM-DD,4193,4195 mixed date strings,4193 YYYY-MM-DD dates,"Combined year, month-heading, and day strings into ISO YYYY-MM-DD format"
+15,Wikipedia,Filter Wikipedia events to valid M >= 6.0 earthquakes,1548,4195,2647,Retained M >= 6.0 earthquakes with valid dates to match project scope
+16,Wikipedia,Deduplicate Wikipedia summary tables & HTML merged-cell repeats,388,2647,2267,Removed duplicate summary-table rows and cleared repeated rowspan death tolls on same-date aftershocks
+17,WorldBank,Remove regional & income aggregates,1274,6916,5642,Filtered out 79 World Bank regional/income aggregates to retain only sovereign countries/territories
+18,WorldBank,Drop sparse/redundant WDI columns,5642,37,19,"Dropped 18 sparse survey/redundant columns (e.g., Gini with >65% missingness)"
+19,WorldBank,Remove duplicate country-year keys,0,5642,5642,"Verified unique (country_iso3, year) keys"
+20,WorldBank,Impute country-year gaps (<30% missing via Linear Trend / FFill),1005,4161,3156,Imputed trailing publication lags using linear regression (R2>=0.5) or year t-1 forward-fill
+21,WorldBank,Diagnose IQR outliers in log10(GDP per capita PPP),0,0,0,Detected via 1.5*IQR; diagnosed ultra-high/low income economies as real macroeconomic values and kept
+22,USGS+NOAA+Wiki,Reconcile NOAA vs Wiki deaths,212,97,0,"Reconciled cross-source disagreements via average, and kept single-source positive tolls"

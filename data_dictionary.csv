@@ -1,0 +1,22 @@
+column,dtype,unit,source,allowed_range,description
+id,str,string,USGS ComCat API,Unique alphanumeric string,USGS event ID
+date,str,YYYY-MM-DD,USGS / NOAA / Wiki,2000-01-01 to 2025-12-31,UTC date
+year,int32,year,USGS / World Bank,2000 to 2025,Calendar year
+latitude,float64,decimal degrees,USGS ComCat API,-90.0 to 90.0,Epicentre latitude
+longitude,float64,decimal degrees,USGS ComCat API,-180.0 to 180.0,Epicentre longitude
+depth,float64,km,USGS ComCat API,0.0 to 700.0 km,Focal depth
+mag,float64,Mw / magnitude,USGS ComCat API,6.0 to 9.5,Earthquake magnitude
+magType_clean,str,categorical,USGS ComCat API,"Mw, mb, ms, md, ml",Magnitude scale
+country_clean,str,string,Natural Earth / USGS,Sovereign country or Offshore,Standardized country name
+country_iso3,str,ISO-3 code,Natural Earth / WB,3-letter uppercase or OFFSHORE,ISO-3166 alpha-3 code
+noaa_deaths,float64,persons (count),NOAA NCEI API,>= 0,NOAA reported deaths
+is_default_depth,bool,boolean,Derived (USGS),"True (10/33 km), False",Fixed placeholder depth flag
+cluster_shock_count,int64,count,Derived (USGS),>= 1,Shocks collapsed in cluster
+wiki_deaths,float64,persons (count),Wikipedia,>= 0,Wikipedia reported deaths
+deaths_disagree,bool,boolean,Derived,"True, False",NOAA vs Wiki disagreement flag
+deaths_final,float64,persons (count),NOAA + Wikipedia,>= 0,Reconciled final death toll
+region,str,categorical,World Bank WDI,7 global regions,World Bank geographic region
+income_group,str,categorical,World Bank WDI,"Low, Lower-middle, Upper-middle, High",World Bank income tier
+gdp_per_capita_ppp_constant_2021,float64,2021 intl $,World Bank WDI,> 0 intl $,Real PPP GDP per capita
+population_total,float64,persons,World Bank WDI,> 0,Total national population
+population_density_per_sq_km,float64,persons / sq km,World Bank WDI,> 0,Population density
