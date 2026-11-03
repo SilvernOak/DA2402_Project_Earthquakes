@@ -3855,7 +3855,7 @@ time,latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,place,
 2025-10-27T12:38:40.364Z,16.5419,-59.5574,9,6.5,mww,161,21,1.456,0.71,us,us6000rjq8,2026-01-15T22:46:56.040Z,"164 km E of Beauséjour, Guadeloupe",earthquake,6.06,1.83,0.031,101,reviewed,us,us
 2025-10-27T19:48:28.767Z,39.1937,28.2425,8,6,mww,130,21,1.047,0.6,us,us6000rjsu,2026-01-15T22:46:57.040Z,"7 km SE of Sındırgı, Turkey",earthquake,3.94,1.824,0.042,55,reviewed,us,us
 2025-10-28T14:40:18.481Z,-6.7001,129.9887,142,6.4,mww,263,16,2.165,0.67,us,us6000rjx3,2026-01-15T22:46:59.040Z,"Banda Sea",earthquake,8.34,1.793,0.036,74,reviewed,us,us
-2025-11-02T20:29:02.008Z,36.5461,67.3886,28,6.2,mww,118,46,2.47,0.86,us,us6000rl31,2026-10-26T16:46:50.599Z,"30 km SE of Mazār-e Sharīf, Afghanistan",earthquake,6.99,1.878,0.066,22,reviewed,us,us
+2025-11-02T20:29:02.008Z,36.5461,67.3886,28,6.2,mww,118,46,2.47,0.86,us,us6000rl31,2026-11-02T17:00:44.395Z,"30 km SE of Mazār-e Sharīf, Afghanistan",earthquake,6.99,1.878,0.066,22,reviewed,us,us
 2025-11-03T08:44:43.281Z,52.2143,160.2108,29,6.1,mww,140,77,1.773,0.59,us,us6000rl5i,2026-01-27T17:59:06.040Z,"142 km SE of Petropavlovsk-Kamchatsky, Russia",earthquake,8.63,1.885,0.043,53,reviewed,us,us
 2025-11-04T07:37:22.906Z,12.3924,143.1427,65,6,mww,136,30,2.06,0.91,us,us6000rlcd,2026-10-27T07:47:35.356Z,"191 km WSW of Merizo Village, Guam",earthquake,7.65,1.831,0.05,39,reviewed,us,us
 2025-11-04T23:28:59.236Z,52.1115,160.1897,28,6,mww,103,67,1.818,0.63,us,us6000rlik,2026-01-27T17:59:08.040Z,"149 km SE of Petropavlovsk-Kamchatsky, Russia",earthquake,5.72,1.826,0.045,47,reviewed,us,us
