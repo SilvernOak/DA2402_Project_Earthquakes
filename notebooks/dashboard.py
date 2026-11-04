@@ -19,7 +19,6 @@ from sklearn.cluster import DBSCAN, AgglomerativeClustering
 
 APP_DIR = Path(__file__).resolve().parent
 PROJECT_DIR = next((p for p in (APP_DIR, APP_DIR.parent) if (p / "clean").exists() or (p / "data" / "clean").exists()), APP_DIR)
-# FIX: Redirect to the actual folder where your plots are saved
 PLOTS_DIR = PROJECT_DIR / "reports" / "figures"
 EARTH_KM = 6371.0088
 MAX_CLUSTER_RADIUS_KM = 500
@@ -1087,25 +1086,39 @@ def predictor_page():
     ])
 
 def methodology_page():
+    table_header = [
+        html.Thead(html.Tr([html.Th("Team Member"), html.Th("Primary Responsibility"), html.Th("Data Source Focus"), html.Th("Visualisation/Dashboard Role")]))
+    ]
+    row1 = html.Tr([html.Td(html.B("Shashank")), html.Td("Pipeline Architecture"), html.Td("USGS ComCat API"), html.Td("Dash Layout & Callbacks")])
+    row2 = html.Tr([html.Td(html.B("Varshith")), html.Td("Text Parsing & Regex"), html.Td("Wikipedia HTML"), html.Td("Gestalt Grouping & UX")])
+    row3 = html.Tr([html.Td(html.B("Shashank")), html.Td("Data Reconciliation"), html.Td("NOAA NCEI"), html.Td("OLS Simulation & SQLite")])
+    row4 = html.Tr([html.Td(html.B("Varshith")), html.Td("Econometric Merging"), html.Td("World Bank WDI"), html.Td("Colour Theory & L* Testing")])
+    
+    contributions_table = dbc.Table(
+        table_header + [html.Tbody([row1, row2, row3, row4])], 
+        bordered=True, hover=True, responsive=True, className="mt-3", style={"fontSize": "14px", "backgroundColor": "#ffffff"}
+    )
+
     return html.Div([
         header("PROJECT INFORMATION", "Methodology", "Sources, cleaning rules, models and limitations."),
         panel(html.H3("01 · Sources"), html.Ul([
-            html.Li("USGS ComCat FDSN event API (earthquake.usgs.gov/fdsnws/event/1/), M 6.0+, 2000-2025 (3,360 deduplicated mainshocks)."),
-            html.Li("NOAA NCEI Significant Earthquake Database (ngdc.noaa.gov/hazel), official event fatality counts."),
-            html.Li("Wikipedia 'List of earthquakes in YYYY' pages (MediaWiki), monthly tables and historical fatality records."),
-            html.Li("World Bank World Development Indicators API (api.worldbank.org/v2), GDP per capita (PPP, constant 2021 international $), population density, region and income tier."),
-            html.Li("All four sources are merged into clean/earthquakes_master_2000_2025.parquet and loaded into a local parameterized SQLite database (earthquakes_app.db)."),
+            html.Li("USGS ComCat FDSN event API (earthquake.usgs.gov/fdsnws/event/1/), M 6+, 2000-2025."),
+            html.Li("NOAA NCEI Significant Earthquake Database (ngdc.noaa.gov/hazel), deaths per event."),
+            html.Li("Wikipedia 'List of earthquakes in YYYY' pages (MediaWiki), tables and text."),
+            html.Li("World Bank World Development Indicators API (api.worldbank.org/v2); Taiwan (optional) from National Statistics Taiwan and the IMF World Economic Outlook."),
+            html.Li("All of it merged into one table, clean/earthquakes_master_*.parquet, which is the only file this app needs."),
         ])),
-        panel(html.H3("02 · Deaths columns and hierarchical reconciliation"), html.P("deaths_final (sidebar: 'Reconciled') resolves NOAA NCEI and Wikipedia fatality counts using a 3-tier hierarchical rule: (1) NOAA NCEI is prioritized as the primary scientific authority when both sources report and agree within 25% or 100 deaths; (2) Wikipedia is used as a fallback when NOAA reports 0 or is missing; and (3) the rounded integer midpoint is used ONLY when both sources report vast discrepancies (>25% relative difference and >100 deaths, such as Haiti 2010: NOAA 316,000 vs. Wikipedia 208,000 -> 262,000). deaths_disagree flags all events where the two sources differ. Zeros mean 'no reported deaths'.")),
-        panel(html.H3("03 · Socio-economic and income indicators"), html.P("Each onshore earthquake is joined with its country's World Bank income group, GDP per capita (PPP, constant 2021 $), and population density in the exact year the earthquake occurred (e.g., Haiti 2010 is evaluated as Low income). Non-WDI territories (such as Taiwan and New Caledonia) are assigned their historical income tier for categorical charts, while missing continuous GDP values (MAR / structural WDI omissions) and 1,406 offshore marine earthquakes are excluded from continuous regressions and noted explicitly.")),
-        panel(html.H3("04 · Econometric models"), html.P("Plot 3 (Exposure): Evaluates nested OLS models on log10(1 + deaths) across all onshore earthquakes, comparing the explanatory power (R2) of physical controls (magnitude and log10(1 + depth)) against national population density and regional fixed effects."), html.P("Plot 4 (Income Effect): Fits ordinary least squares on log10(deaths) among deadly shallow onshore earthquakes (<=70 km), controlling for magnitude and log10(1 + depth), with 95% confidence intervals computed via a 300-iteration country-cluster bootstrap."), html.P("Plot 8 (Death Predictor): Fits a two-part hurdle model on onshore earthquakes with GDP data. Part 1 is a logistic regression for the probability of at least one death; Part 2 is OLS on log10(deaths) among deadly events (using observed 10th-90th percentile residuals for the 80% range and Duan smearing for expected values). When a specific historical earthquake is clicked, 'This earthquake, your settings' anchors on that event's actual toll and scales it by the OLS partial slopes to preserve local fixed effects (urbanization, building codes, tsunami).")),
-        panel(html.H3("05 · Spatiotemporal deduplication and depth artifacts"), html.P("Raw USGS M 6.0+ shocks within +/-2 days and 150 km (Haversine great-circle distance) of a larger mainshock are collapsed into the primary mainshock (cluster_shock_count records the number of merged shocks, preventing 4.8x fatality inflation in sequences like Turkey-Syria 2023). Mainshocks assigned fixed 10.0 km or 33.0 km default depths by seismic networks (788 events, 23.5%) are flagged via is_default_depth.")),
+        panel(html.H3("02 · Deaths columns"), html.P("deaths_final (sidebar: 'Reconciled') = the average of noaa_deaths and wiki_deaths when both report deaths, otherwise whichever reports; deaths_disagree flags the earthquakes where the two differ. Zeros mean 'no reported deaths'.")),
+        panel(html.H3("03 · Income"), html.P("Each earthquake carries the World Bank income group, GDP per capita (PPP, constant 2021 $) and density of its country in the year it happened (so Haiti 2010 counts as low income). Offshore earthquakes and places without World Bank data are left out of income plots and reported in a note.")),
+        panel(html.H3("04 · Models"), html.P("Ordinary least squares on log10 deaths among deadly earthquakes, with magnitude and log depth as controls; GDP per capita in log10. Confidence intervals come from a bootstrap that resamples whole countries, because earthquakes in one country are not independent."), html.P("Death predictor (plot 8): a two-part model on earthquakes on land with a GDP value. Part 1 is a logistic regression for the chance of any death; part 2 is least squares on log10 deaths among deadly earthquakes, with the 80% range taken from the observed residuals and Duan smearing for the mean.")),
+        panel(html.H3("05 · Deduplication and reconciliation"), html.P("USGS shocks within 2 days and 150 km of a larger shock are merged into it (cluster_shock_count says how many). NOAA and Wikipedia are reconciled by averaging when both report deaths, but averaging is ONLY used on vast disagreements (>25% and >100).")),
         panel(html.H3("06 · Limitations"), html.Ul([
-            html.Li("1,406 offshore marine earthquakes do not intersect land country polygons and are excluded from national income and density regressions."),
-            html.Li("National population density is a country-wide average that masks whether an earthquake epicentre struck a dense city or an uninhabited desert."),
-            html.Li("World Bank WDI does not report continuous GDP per capita for Taiwan (n=45) or conflict-gap years in Venezuela (n=6); these are left un-imputed (MAR) rather than fabricating macroeconomic data."),
-            html.Li("Earthquake mortality is heavily fat-tailed (a handful of mega-disasters dominate decadal totals), and observational regressions measure conditional association rather than strict causality."),
+            html.Li("Offshore earthquakes without a NOAA match carry no country and drop out of the income plots; NOAA-matched ones were snapped to the nearest coast within 5 degrees."),
+            html.Li("Country-average density hides where people live relative to the epicentre."),
+            html.Li("Taiwan's values (optional file) are approximations; 2012-2015 are interpolated and density is the 2024 value."),
+            html.Li("A few disasters dominate every total; associations are not causal."),
         ])),
+        panel(html.H3("07 · Team Contributions"), contributions_table),
         pager("/methodology"),
     ])
 
