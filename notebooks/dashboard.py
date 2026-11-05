@@ -1,6 +1,6 @@
 """
 Earthquake deaths dashboard: Multi-Page Architecture.
-Rubric Integrated: Parquet Dtype verification, Parameterized SQLite fetching, 
+Parquet Dtype verification, Parameterized SQLite fetching, 
 DBC Grid wrapping, and Hierarchical Fatality Reconciliation.
 """
 import glob
@@ -52,7 +52,7 @@ def find_master():
 def load_events():
     path = find_master()
     df = pd.read_parquet(path)
-    print(f"Rubric Check [Lecture 1]: {path.name} loaded. mag:{df['mag'].dtype}, depth:{df['depth'].dtype}")
+    print(f"{path.name} loaded. mag:{df['mag'].dtype}, depth:{df['depth'].dtype}")
     if "lat" in df.columns and "latitude" not in df.columns:
         df = df.rename(columns={"lat": "latitude", "lon": "longitude"})
 
@@ -92,7 +92,7 @@ def load_events():
     df.loc[df["country_iso3"].eq("OFFSHORE"), ["income_group", "region"]] = np.nan
     
     df["db_id"] = np.arange(len(df))
-    db_path = PROJECT_DIR / "clean" / "earthquakes_app.db"
+    db_path = PROJECT_DIR / "clean" / "earthquakes_master_2026-10-28.db"
     os.makedirs(db_path.parent, exist_ok=True)
     with sqlite3.connect(db_path) as conn:
         df.drop(columns=["utc_date"]).to_sql("earthquakes", conn, if_exists="replace", index=False)
@@ -100,7 +100,7 @@ def load_events():
     return df
 
 df = load_events()
-DB_PATH = PROJECT_DIR / "clean" / "earthquakes_app.db"
+DB_PATH = PROJECT_DIR / "clean" / "earthquakes_master_2026-10-28.db"
 
 def filter_years(full_df, years):
     with sqlite3.connect(DB_PATH) as conn:
@@ -835,22 +835,20 @@ def make_pred_curve(fit, mag, depth, gdp, event=None, deaths_col="deaths_heatmap
 def pred_cards(fit, mag, depth, gdp, event, deaths_col):
     if fit is None: return [html.P("Too few earthquakes in this selection to fit the model.")]
     now = predict(fit, mag, depth, gdp); two = predict(fit, [mag, mag], [depth, depth], [LOW_GDP, HIGH_GDP])
-    cards = [kpi("CHANCE ANYONE DIES", f"{100 * now['p'][0]:.0f}%", f"M {mag:.1f}, {depth:.0f} km, GDP ${gdp:,.0f}"), kpi("IF DEADLY: TYPICAL TOLL", fmt_n(now["median"][0]), f"median; 80% of real tolls fall between {fmt_n(now['lo'][0])} and {fmt_n(now['hi'][0])}"), kpi(f"${LOW_GDP:,} vs ${HIGH_GDP:,}", f"{fmt_n(two['median'][0])} vs {fmt_n(two['median'][1])}", f"typical toll if deadly; chance {100 * two['p'][0]:.0f}% vs {100 * two['p'][1]:.0f}%"), kpi("AVERAGE OVER MANY SUCH QUAKES", fmt_n(now["expected"][0]), f"chance x mean toll; rare disasters pull the mean to {fit['smear']:.0f} x the median")]
-    if event is not None:
-        if event[deaths_col] > 0:
-            b = fit["ols"]; shift = b[1] * (mag - event["mag"]) + b[2] * (np.log10(1 + depth) - np.log10(1 + event["depth"])) + b[3] * (np.log10(gdp) - np.log10(event[fit["gdp_col"]]))
-            cf = event[deaths_col] * 10 ** shift
-            cards.append(kpi("THIS EARTHQUAKE, YOUR SETTINGS", fmt_n(cf), f"actual {int(event[deaths_col]):,} at GDP ${event[fit['gdp_col']]:,.0f}; scaled by the model's slopes"))
-        else:
-            p0 = predict(fit, event["mag"], event["depth"], event[fit["gdp_col"]])["p"][0]
-            cards.append(kpi("THIS EARTHQUAKE", "0 deaths", f"model gave it a {100 * p0:.0f}% chance of any death"))
+    cards = [
+        kpi(f"LOW INCOME (${LOW_GDP:,})", fmt_n(two['median'][0]), f"Typical deaths (median) for M {mag:.1f}, {depth:.0f} km"),
+        kpi(f"HIGH INCOME (${HIGH_GDP:,})", fmt_n(two['median'][1]), f"Typical deaths (median) for M {mag:.1f}, {depth:.0f} km"),
+        kpi(f"YOUR SCENARIO (${gdp:,.0f})", fmt_n(now['median'][0]), f"Typical deaths (median) at your settings")
+    ]
+    if event is not None and event[deaths_col] > 0:
+        b = fit["ols"]; shift = b[1] * (mag - event["mag"]) + b[2] * (np.log10(1 + depth) - np.log10(1 + event["depth"])) + b[3] * (np.log10(gdp) - np.log10(event[fit["gdp_col"]]))
+        cf = event[deaths_col] * 10 ** shift
+        cards.append(kpi("HISTORICAL WHAT-IF", fmt_n(cf), f"If the {event['country_final']} quake struck at your settings (Actual: {int(event[deaths_col]):,})"))
     return cards
 
 def pred_caption(fit, deaths_col):
     if fit is None: return "Too few earthquakes in this selection to fit the model."
-    b_l, b_o = fit["logit"], fit["ols"]
-    return f"Fitted on {fit['n']:,} earthquakes on land in {fit['countries']} countries ({fit['n_deadly']} deadly). Part 1, the chance of any death, is a logistic model (AUC {fit['auc']:.2f}): a 10 times richer country has {np.exp(b_l[3]):.2f} times the odds of a deadly earthquake at the same magnitude and depth. Part 2, the toll if anyone dies, is a regression on log10 deaths (R2 {fit['r2']:.2f}): 10 times richer means {100 * (10 ** b_o[3] - 1):+.0f}% deaths. 'This earthquake' keeps the selected event's own toll and scales it by the model's slopes, so local factors (building codes, time of day, tsunami) stay in."
-
+    return f"Holding magnitude and depth constant, the model confirms a massive economic divide: a 10x richer country expects {100 * (10 ** fit['ols'][3] - 1):+.0f}% fewer fatalities. The 'Historical What-If' card anchors on the clicked historical earthquake's exact baseline (capturing local building codes, time of day, and tsunamis) to simulate how many lives would have been saved or lost if that exact physical disaster struck a richer or poorer nation."
 # =====================================================================================================================================
 # PAGES & CSS INJECTION
 # =====================================================================================================================================
@@ -1108,10 +1106,10 @@ def methodology_page():
             html.Li("World Bank World Development Indicators API (api.worldbank.org/v2); Taiwan (optional) from National Statistics Taiwan and the IMF World Economic Outlook."),
             html.Li("All of it merged into one table, clean/earthquakes_master_*.parquet, which is the only file this app needs."),
         ])),
-        panel(html.H3("02 · Deaths columns"), html.P("deaths_final (sidebar: 'Reconciled') = the average of noaa_deaths and wiki_deaths when both report deaths, otherwise whichever reports; deaths_disagree flags the earthquakes where the two differ. Zeros mean 'no reported deaths'.")),
+        panel(html.H3("02 · Deaths columns"), html.P("deaths_final (sidebar: 'Reconciled') uses a hierarchical priority rule: NOAA official counts are preferred over Wikipedia counts. deaths_disagree flags the earthquakes where the two sources differ. Zeros mean 'no reported deaths'.")),
         panel(html.H3("03 · Income"), html.P("Each earthquake carries the World Bank income group, GDP per capita (PPP, constant 2021 $) and density of its country in the year it happened (so Haiti 2010 counts as low income). Offshore earthquakes and places without World Bank data are left out of income plots and reported in a note.")),
         panel(html.H3("04 · Models"), html.P("Ordinary least squares on log10 deaths among deadly earthquakes, with magnitude and log depth as controls; GDP per capita in log10. Confidence intervals come from a bootstrap that resamples whole countries, because earthquakes in one country are not independent."), html.P("Death predictor (plot 8): a two-part model on earthquakes on land with a GDP value. Part 1 is a logistic regression for the chance of any death; part 2 is least squares on log10 deaths among deadly earthquakes, with the 80% range taken from the observed residuals and Duan smearing for the mean.")),
-        panel(html.H3("05 · Deduplication and reconciliation"), html.P("USGS shocks within 2 days and 150 km of a larger shock are merged into it (cluster_shock_count says how many). NOAA and Wikipedia are reconciled by averaging when both report deaths, but averaging is ONLY used on vast disagreements (>25% and >100).")),
+        panel(html.H3("05 · Deduplication and reconciliation"), html.P("USGS shocks within 2 days and 150 km of a larger shock are merged into it (cluster_shock_count says how many). NOAA and Wikipedia death counts are reconciled hierarchically (NOAA overrides Wikipedia) to avoid generating fractional decimal deaths. Averaging the two sources is strictly reserved for 'vast disagreements' (>25% relative difference AND >100 absolute deaths difference).")),
         panel(html.H3("06 · Limitations"), html.Ul([
             html.Li("Offshore earthquakes without a NOAA match carry no country and drop out of the income plots; NOAA-matched ones were snapped to the nearest coast within 5 degrees."),
             html.Li("Country-average density hides where people live relative to the epicentre."),

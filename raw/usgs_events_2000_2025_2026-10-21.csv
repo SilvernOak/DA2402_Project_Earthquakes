@@ -3013,7 +3013,7 @@ time,latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,place,
 2019-07-01T17:13:28.400Z,-15.4403,167.531,91,6,mww,,53,6.675,1.11,us,us70004840,2025-12-22T18:12:34.118Z,"40 km ENE of Luganville, Vanuatu",earthquake,8.6,1.9,0.048,41,reviewed,us,us
 2019-07-04T04:30:44.424Z,51.2369,-130.5005,10,6.2,mww,,70,1.143,1.01,us,us700049sf,2025-12-22T18:12:39.891Z,"250 km WNW of Port McNeill, Canada",earthquake,6.6,1.8,0.026,143,reviewed,us,us
 2019-07-04T17:33:49.000Z,35.7053333,-117.5038333,10.5,6.4,mw,62,47,0.1233,0.16,ci,ci38443183,2025-12-22T18:14:43.508Z,"Ridgecrest Earthquake Sequence",earthquake,0.15,0.36,,6,reviewed,ci,ci
-2019-07-06T03:19:53.040Z,35.7695,-117.5993333,8,7.1,mw,77,43,0.04616,0.22,ci,ci38457511,2026-10-19T00:23:41.520Z,"Ridgecrest Earthquake Sequence",earthquake,0.19,31.61,0.028,126,reviewed,ci,ci
+2019-07-06T03:19:53.040Z,35.7695,-117.5993333,8,7.1,mw,77,43,0.04616,0.22,ci,ci38457511,2026-11-03T03:30:07.412Z,"Ridgecrest Earthquake Sequence",earthquake,0.19,31.61,0.028,126,reviewed,ci,ci
 2019-07-07T15:08:40.525Z,0.5126,126.1892,35,6.9,mww,,21,1.205,0.8,us,us70004dz3,2025-12-22T17:54:55.770Z,"136 km WSW of Ternate, Indonesia",earthquake,6.2,1.9,0.043,51,reviewed,us,us
 2019-07-11T17:08:37.977Z,-4.6408,155.2241,495.17,6,mww,,26,3.084,0.7,us,us70004icj,2025-12-22T18:19:30.186Z,"179 km NNW of Arawa, Papua New Guinea",earthquake,2.7,3.6,0.045,48,reviewed,us,us
 2019-07-13T00:57:44.339Z,29.3533,128.1534,251,6.1,mww,,11,2.51,1.19,us,us70004jea,2025-12-22T18:13:21.668Z,"169 km NW of Naze, Japan",earthquake,6.3,1.8,0.033,86,reviewed,us,us
@@ -3308,7 +3308,7 @@ time,latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,place,
 2021-08-24T05:37:51.853Z,48.8647,154.9113,35,6,mww,,75,4.599,0.44,us,us7000f2ws,2025-12-22T22:14:11.409Z,"219 km SSW of Severo-Kuril’sk, Russia",earthquake,7.8,1.9,0.042,55,reviewed,us,us
 2021-08-31T02:52:50.513Z,-29.9211,-177.3798,16,6.4,mww,,31,0.808,0.64,us,us7000f60j,2025-12-22T22:18:33.071Z,"Kermadec Islands, New Zealand",earthquake,6.8,1.7,0.045,48,reviewed,us,us
 2021-09-07T09:49:56.991Z,-19.3855,-176.0683,10,6,mww,,41,5.418,0.48,us,us7000f8tc,2025-12-22T22:15:41.817Z,"185 km WNW of Pangai, Tonga",earthquake,9.1,1.8,0.068,21,reviewed,us,us
-2021-09-08T01:47:47.437Z,16.9465,-99.753,20,7,mww,,43,0.07,0.64,us,us7000f93v,2025-12-22T22:15:43.705Z,"Acapulco, Mexico",earthquake,5.2,1.2,0.04,61,reviewed,us,us
+2021-09-08T01:47:47.437Z,16.9465,-99.753,20,7,mww,,43,0.07,0.64,us,us7000f93v,2026-11-04T16:05:08.971Z,"Acapulco, Mexico",earthquake,5.2,1.2,0.04,61,reviewed,us,us
 2021-09-13T05:18:14.639Z,-23.7629,-67.0129,205,6.2,mww,,29,1.341,0.53,us,us7000fap8,2025-12-22T22:18:55.794Z,"86 km NW of San Antonio de los Cobres, Argentina",earthquake,9,1.8,0.043,51,reviewed,us,us
 2021-09-20T20:25:26.525Z,46.3926,152.4879,35,6.1,mww,,14,6.717,1.18,us,us7000fczf,2025-12-22T22:16:37.630Z,"Kuril Islands",earthquake,7.5,1.8,0.037,70,reviewed,us,us
 2021-09-21T13:14:32.025Z,-36.7771,-73.9329,18.8,6.4,mww,,110,2.14,0.7,us,us7000fd4k,2025-12-22T22:16:41.958Z,"73 km W of Talcahuano, Chile",earthquake,6.2,3,0.043,52,reviewed,us,us
@@ -3857,7 +3857,7 @@ time,latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,place,
 2025-10-28T14:40:18.481Z,-6.7001,129.9887,142,6.4,mww,263,16,2.165,0.67,us,us6000rjx3,2026-01-15T22:46:59.040Z,"Banda Sea",earthquake,8.34,1.793,0.036,74,reviewed,us,us
 2025-11-02T20:29:02.008Z,36.5461,67.3886,28,6.2,mww,118,46,2.47,0.86,us,us6000rl31,2026-11-02T17:00:44.395Z,"30 km SE of Mazār-e Sharīf, Afghanistan",earthquake,6.99,1.878,0.066,22,reviewed,us,us
 2025-11-03T08:44:43.281Z,52.2143,160.2108,29,6.1,mww,140,77,1.773,0.59,us,us6000rl5i,2026-01-27T17:59:06.040Z,"142 km SE of Petropavlovsk-Kamchatsky, Russia",earthquake,8.63,1.885,0.043,53,reviewed,us,us
-2025-11-04T07:37:22.906Z,12.3924,143.1427,65,6,mww,136,30,2.06,0.91,us,us6000rlcd,2026-10-27T07:47:35.356Z,"191 km WSW of Merizo Village, Guam",earthquake,7.65,1.831,0.05,39,reviewed,us,us
+2025-11-04T07:37:22.906Z,12.3924,143.1427,65,6,mww,136,30,2.06,0.91,us,us6000rlcd,2026-11-04T07:47:35.632Z,"191 km WSW of Merizo Village, Guam",earthquake,7.65,1.831,0.05,39,reviewed,us,us
 2025-11-04T23:28:59.236Z,52.1115,160.1897,28,6,mww,103,67,1.818,0.63,us,us6000rlik,2026-01-27T17:59:08.040Z,"149 km SE of Petropavlovsk-Kamchatsky, Russia",earthquake,5.72,1.826,0.045,47,reviewed,us,us
 2025-11-09T08:03:39.367Z,39.485,143.3782,18,6.8,mww,117,46,2.201,0.73,us,us6000rmea,2026-01-29T22:05:30.040Z,"122 km E of Yamada, Japan",earthquake,7.11,1.831,0.059,28,reviewed,us,us
 2025-11-09T08:54:36.914Z,39.4971,143.3097,10,6.4,mww,127,83,2.151,0.64,us,us6000rmep,2026-01-29T22:05:27.040Z,"117 km E of Yamada, Japan",earthquake,5.97,1.781,0.052,35,reviewed,us,us

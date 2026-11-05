@@ -1,6 +1,6 @@
 Requested URL: https://en.wikipedia.org/robots.txt
 HTTP status: 200
-Checked at UTC: 2026-11-02T20:33:18.450889+00:00
+Checked at UTC: 2026-11-05T11:12:36.533711+00:00
 
 ﻿# robots.txt for http://www.wikipedia.org/ and friends
 #

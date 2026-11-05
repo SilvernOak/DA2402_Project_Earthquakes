@@ -1,6 +1,0 @@
-step,source,operation,rows_affected,before_count,after_count,reason
-1,WorldBank,Remove regional & income aggregates,1274,6916,5642,Filtered out 79 World Bank regional/income aggregates to retain only sovereign countries/territories
-2,WorldBank,Drop sparse/redundant WDI columns,5642,37,19,"Dropped 18 sparse survey/redundant columns (e.g., Gini with >65% missingness)"
-3,WorldBank,Remove duplicate country-year keys,0,5642,5642,"Verified unique (country_iso3, year) keys"
-4,WorldBank,Impute country-year gaps (<30% missing via Linear Trend / FFill),1005,4161,3156,Imputed trailing publication lags using linear regression (R2>=0.5) or year t-1 forward-fill
-5,WorldBank,Diagnose IQR outliers in log10(GDP per capita PPP),0,0,0,Detected via 1.5*IQR; diagnosed ultra-high/low income economies as real macroeconomic values and kept

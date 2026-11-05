@@ -1,5 +1,0 @@
-step,source,operation,rows_affected,before_count,after_count,reason
-1,Wikipedia,Parse Wikipedia death-toll strings & ranges,6801,6801 unformatted strings,904 clean floats,"Converted ranges to midpoints, stripped 'est.'/footnotes, and recovered text-bullet deaths"
-2,Wikipedia,Standardize Wikipedia table dates to YYYY-MM-DD,7855,7857 mixed date strings,7855 YYYY-MM-DD dates,"Combined year, month-heading, and day strings into ISO YYYY-MM-DD format"
-3,Wikipedia,Filter Wikipedia events to valid M >= 6.0 earthquakes,2658,7857,5199,Retained M >= 6.0 earthquakes with valid dates to match project scope
-4,Wikipedia,Deduplicate Wikipedia summary tables & HTML merged-cell repeats,1717,5199,3491,Removed duplicate summary-table rows and cleared repeated rowspan death tolls on same-date aftershocks
